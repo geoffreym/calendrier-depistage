@@ -1,0 +1,1946 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Proto calendrier depistage//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Mes dépistages (TEST)
+X-WR-TIMEZONE:Europe/Paris
+X-WR-CALDESC:Prototype de test : rappels de dépistage et de prévention de
+ s cancers (France).
+REFRESH-INTERVAL;VALUE=DURATION:PT1H
+X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:test-col_hpv-51@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Dépistage du cancer du col de l’utérus : test HPV
+DESCRIPTION:Semaine européenne de prévention du cancer du col de l'utéru
+ s. Entre 30 et 65 ans : un test HPV tous les 5 ans si le résultat est né
+ gatif (3 ans après le dernier frottis normal).\nOù : gynécologue\, méd
+ ecin généraliste\, sage-femme\, centre de santé\, hôpital ou laboratoi
+ re de biologie médicale (avec l'invitation ou une ordonnance).\nPrise en 
+ charge : analyse à 100 % avec l'invitation\, prélèvement à 70 %.\nSour
+ ce : ameli – https://www.ameli.fr/assure/sante/themes/cancer-col-uterus/
+ depistage-organise-cancer-col-uterus\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du col de l’utérus : test HPV
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-51@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-51@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-51@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271102
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-52@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20281002
+DTEND;VALUE=DATE:20281003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-53@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20290305
+DTEND;VALUE=DATE:20290306
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-53@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20291001
+DTEND;VALUE=DATE:20291002
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-53@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20291105
+DTEND;VALUE=DATE:20291106
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-54@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20301007
+DTEND;VALUE=DATE:20301008
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-55@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20310303
+DTEND;VALUE=DATE:20310304
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-55@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20311006
+DTEND;VALUE=DATE:20311007
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-55@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20311103
+DTEND;VALUE=DATE:20311104
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-col_hpv-56@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20320126
+DTEND;VALUE=DATE:20320127
+SUMMARY:Dépistage du cancer du col de l’utérus : test HPV
+DESCRIPTION:Semaine européenne de prévention du cancer du col de l'utéru
+ s. Entre 30 et 65 ans : un test HPV tous les 5 ans si le résultat est né
+ gatif (3 ans après le dernier frottis normal).\nOù : gynécologue\, méd
+ ecin généraliste\, sage-femme\, centre de santé\, hôpital ou laboratoi
+ re de biologie médicale (avec l'invitation ou une ordonnance).\nPrise en 
+ charge : analyse à 100 % avec l'invitation\, prélèvement à 70 %.\nSour
+ ce : ameli – https://www.ameli.fr/assure/sante/themes/cancer-col-uterus/
+ depistage-organise-cancer-col-uterus\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du col de l’utérus : test HPV
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-56@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20321004
+DTEND;VALUE=DATE:20321005
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-57@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20330307
+DTEND;VALUE=DATE:20330308
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-57@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20331003
+DTEND;VALUE=DATE:20331004
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-57@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20331107
+DTEND;VALUE=DATE:20331108
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-58@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20341002
+DTEND;VALUE=DATE:20341003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-59@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20350305
+DTEND;VALUE=DATE:20350306
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-59@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20351001
+DTEND;VALUE=DATE:20351002
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-59@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20351105
+DTEND;VALUE=DATE:20351106
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-60@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20361006
+DTEND;VALUE=DATE:20361007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-bilan-61@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20370105
+DTEND;VALUE=DATE:20370106
+SUMMARY:Mon bilan prévention
+DESCRIPTION:Un rendez-vous de 30 à 45 minutes pour faire le point sur votr
+ e santé : alimentation\, sommeil\, activité physique\, santé mentale\, 
+ santé sexuelle\, facteurs de risque. À faire une fois entre 60 et 65 ans
+ .\nOù : médecin\, pharmacien\, sage-femme\, infirmier ou kinésithérape
+ ute.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Santé pub
+ lique France – https://www.santepubliquefrance.fr/la-sante-a-tout-age/le
+ s-bilans-de-prevention-aux-ages-cles-de-la-vie\n\nCe rappel ne remplace pa
+ s l'avis de votre médecin. En cas de symptôme\, consultez sans attendre.
+ \nPrototype de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mon bilan prévention
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-col_hpv-61@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20370126
+DTEND;VALUE=DATE:20370127
+SUMMARY:Dépistage du cancer du col de l’utérus : test HPV
+DESCRIPTION:Semaine européenne de prévention du cancer du col de l'utéru
+ s. Entre 30 et 65 ans : un test HPV tous les 5 ans si le résultat est né
+ gatif (3 ans après le dernier frottis normal).\nOù : gynécologue\, méd
+ ecin généraliste\, sage-femme\, centre de santé\, hôpital ou laboratoi
+ re de biologie médicale (avec l'invitation ou une ordonnance).\nPrise en 
+ charge : analyse à 100 % avec l'invitation\, prélèvement à 70 %.\nSour
+ ce : ameli – https://www.ameli.fr/assure/sante/themes/cancer-col-uterus/
+ depistage-organise-cancer-col-uterus\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du col de l’utérus : test HPV
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-61@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20370302
+DTEND;VALUE=DATE:20370303
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-61@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20371005
+DTEND;VALUE=DATE:20371006
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-61@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20371102
+DTEND;VALUE=DATE:20371103
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-62@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20381004
+DTEND;VALUE=DATE:20381005
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-63@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20390307
+DTEND;VALUE=DATE:20390308
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-63@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20391003
+DTEND;VALUE=DATE:20391004
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-63@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20391107
+DTEND;VALUE=DATE:20391108
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-64@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20401001
+DTEND;VALUE=DATE:20401002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-65@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20410304
+DTEND;VALUE=DATE:20410305
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-65@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20411007
+DTEND;VALUE=DATE:20411008
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-65@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20411104
+DTEND;VALUE=DATE:20411105
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-66@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20421006
+DTEND;VALUE=DATE:20421007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-67@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20430302
+DTEND;VALUE=DATE:20430303
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-67@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20431005
+DTEND;VALUE=DATE:20431006
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-67@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20431102
+DTEND;VALUE=DATE:20431103
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-68@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20441003
+DTEND;VALUE=DATE:20441004
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-69@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20450306
+DTEND;VALUE=DATE:20450307
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-69@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20451002
+DTEND;VALUE=DATE:20451003
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-69@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20451106
+DTEND;VALUE=DATE:20451107
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-70@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20461001
+DTEND;VALUE=DATE:20461002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-bilan-71@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20470107
+DTEND;VALUE=DATE:20470108
+SUMMARY:Mon bilan prévention
+DESCRIPTION:Un rendez-vous de 30 à 45 minutes pour faire le point sur votr
+ e santé : alimentation\, sommeil\, activité physique\, santé mentale\, 
+ santé sexuelle\, facteurs de risque. À faire une fois entre 70 et 75 ans
+ .\nOù : médecin\, pharmacien\, sage-femme\, infirmier ou kinésithérape
+ ute.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Santé pub
+ lique France – https://www.santepubliquefrance.fr/la-sante-a-tout-age/le
+ s-bilans-de-prevention-aux-ages-cles-de-la-vie\n\nCe rappel ne remplace pa
+ s l'avis de votre médecin. En cas de symptôme\, consultez sans attendre.
+ \nPrototype de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Mon bilan prévention
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-71@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20470304
+DTEND;VALUE=DATE:20470305
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-71@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20471007
+DTEND;VALUE=DATE:20471008
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-71@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20471104
+DTEND;VALUE=DATE:20471105
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-72@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20481005
+DTEND;VALUE=DATE:20481006
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-colorectal-73@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20490301
+DTEND;VALUE=DATE:20490302
+SUMMARY:Dépistage du cancer colorectal : test à faire chez soi
+DESCRIPTION:Mars bleu. Entre 50 et 74 ans\, sans symptôme ni antécédent 
+ : un test immunologique à faire chez soi tous les 2 ans.\nOù : kit chez 
+ votre pharmacien\, médecin ou infirmier\, ou à commander sur monkit.depi
+ stage-colorectal.fr.\nPrise en charge : 100 % (test et analyse).\nSource :
+  Institut national du cancer – https://jefaismondepistage.cancer.fr/canc
+ er-colorectal/faire-le-test/\n\nCe rappel ne remplace pas l'avis de votre 
+ médecin. En cas de symptôme\, consultez sans attendre.\nPrototype de tes
+ t : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer colorectal : test à faire chez soi
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein-73@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20491004
+DTEND;VALUE=DATE:20491005
+SUMMARY:Dépistage du cancer du sein : mammographie
+DESCRIPTION:Octobre rose. Entre 50 et 74 ans\, sans symptôme ni facteur de
+  risque particulier : une mammographie et un examen clinique des seins tou
+ s les 2 ans.\nOù : un radiologue agréé\, avec l'invitation de l'Assuran
+ ce Maladie.\nPrise en charge : 100 %\, sans avance de frais.\nSource : Ins
+ titut national du cancer – https://jefaismondepistage.cancer.fr/cancers-
+ du-sein/\n\nCe rappel ne remplace pas l'avis de votre médecin. En cas de 
+ symptôme\, consultez sans attendre.\nPrototype de test : https://geoffrey
+ m.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Dépistage du cancer du sein : mammographie
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-poumon-73@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20491101
+DTEND;VALUE=DATE:20491102
+SUMMARY:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+DESCRIPTION:Mois sans tabac. Programme pilote IMPULSION dans 5 régions (Au
+ vergne-Rhône-Alpes\, Hauts-de-France\, Île-de-France\, Pays de la Loire\
+ , PACA) : un scanner thoracique faible dose pour les fumeurs et ex-fumeurs
+  (arrêt depuis 15 ans ou moins) de 50 à 74 ans\, sous conditions.\nRense
+ ignements : votre médecin ou le 3433.\nPrise en charge : 100 %\, sans ava
+ nce de frais.\nSource : Institut national du cancer – https://jefaismond
+ epistage.cancer.fr/cancer-du-poumon/\n\nCe rappel ne remplace pas l'avis d
+ e votre médecin. En cas de symptôme\, consultez sans attendre.\nPrototyp
+ e de test : https://geoffreym.github.io/calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Cancer du poumon : dépistage pilote pour fumeurs et ex-fumeurs
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-74@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20501003
+DTEND;VALUE=DATE:20501004
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-75@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20511002
+DTEND;VALUE=DATE:20511003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-76@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20521007
+DTEND;VALUE=DATE:20521008
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-77@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20531006
+DTEND;VALUE=DATE:20531007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-78@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20541005
+DTEND;VALUE=DATE:20541006
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-79@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20551004
+DTEND;VALUE=DATE:20551005
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-80@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20561002
+DTEND;VALUE=DATE:20561003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-81@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20571001
+DTEND;VALUE=DATE:20571002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-82@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20581007
+DTEND;VALUE=DATE:20581008
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-83@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20591006
+DTEND;VALUE=DATE:20591007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-84@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20601004
+DTEND;VALUE=DATE:20601005
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-85@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20611003
+DTEND;VALUE=DATE:20611004
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-86@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20621002
+DTEND;VALUE=DATE:20621003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-87@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20631001
+DTEND;VALUE=DATE:20631002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-88@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20641006
+DTEND;VALUE=DATE:20641007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-89@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20651005
+DTEND;VALUE=DATE:20651006
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-90@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20661004
+DTEND;VALUE=DATE:20661005
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-91@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20671003
+DTEND;VALUE=DATE:20671004
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-92@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20681001
+DTEND;VALUE=DATE:20681002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-93@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20691007
+DTEND;VALUE=DATE:20691008
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-94@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20701006
+DTEND;VALUE=DATE:20701007
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-95@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20711005
+DTEND;VALUE=DATE:20711006
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-96@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20721003
+DTEND;VALUE=DATE:20721004
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-97@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20731002
+DTEND;VALUE=DATE:20731003
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-98@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20741001
+DTEND;VALUE=DATE:20741002
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-99@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20751007
+DTEND;VALUE=DATE:20751008
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-sein_clinique-100@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20761005
+DTEND;VALUE=DATE:20761006
+SUMMARY:Examen clinique des seins
+DESCRIPTION:Octobre rose. Dès 25 ans\, un examen clinique des seins (obser
+ vation et palpation) par un professionnel de santé est recommandé au moi
+ ns une fois par an\, même après 74 ans.\nOù : médecin généraliste\, 
+ gynécologue ou sage-femme.\nSource : Institut national du cancer – http
+ s://jefaismondepistage.cancer.fr/cancers-du-sein/questions-frequentes/\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Examen clinique des seins
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261104@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261104T180000
+DTEND;TZID=Europe/Paris:20261104T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261104@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261105@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261105T180000
+DTEND;TZID=Europe/Paris:20261105T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261105@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261106@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261106T180000
+DTEND;TZID=Europe/Paris:20261106T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261106@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261107@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261107T180000
+DTEND;TZID=Europe/Paris:20261107T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261107@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261108@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261108T180000
+DTEND;TZID=Europe/Paris:20261108T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261108@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261109@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261109T180000
+DTEND;TZID=Europe/Paris:20261109T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261109@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-heure-20261110@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;TZID=Europe/Paris:20261110T180000
+DTEND;TZID=Europe/Paris:20261110T181500
+SUMMARY:TEST · rappel à 18 h
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 17 h 50.\n\n
+ Ce rappel ne remplace pas l'avis de votre médecin. En cas de symptôme\, 
+ consultez sans attendre.\nPrototype de test : https://geoffreym.github.io/
+ calendrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel à 18 h
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:test-journee-20261110@calendrier-depistage.test
+DTSTAMP:20261104T103451Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:TEST · rappel journée
+DESCRIPTION:Événement de test : le rappel doit s'afficher à 9 h.\n\nCe r
+ appel ne remplace pas l'avis de votre médecin. En cas de symptôme\, cons
+ ultez sans attendre.\nPrototype de test : https://geoffreym.github.io/cale
+ ndrier-depistage/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TEST · rappel journée
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

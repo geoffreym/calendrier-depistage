@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Proto calendrier de dépistage (test)</title>
+<style>
+  body { font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 0 auto; padding: 24px 16px; color: #14161a; background: #fff; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 28px 0 8px; }
+  p.note { color: #5b6170; font-size: 14px; }
+  a.btn { display: block; padding: 12px 14px; margin: 8px 0; border: 1px solid #e3e5ea; border-radius: 8px; color: #1f4fd1; text-decoration: none; }
+  a.btn small { color: #5b6170; }
+  input.copy { width: 100%; font-size: 13px; padding: 8px; box-sizing: border-box; }
+  ol { font-size: 14px; padding-left: 20px; }
+  ol li span { color: #5b6170; }
+</style>
+</head>
+<body>
+<h1>Proto : calendrier de dépistage</h1>
+<p class="note">Test fonctionnel, sans design. Calendrier de test : profil femme née en 1976, fumeuse, inscrite en novembre 2026, plus un événement « TEST » chaque jour à 18 h (rappel à 17 h 50) et un sur la journée (rappel à 9 h), pendant 7 jours.</p>
+
+<h2>Ajouter à mon agenda</h2>
+<a class="btn" id="apple">Apple (iPhone, iPad, Mac) <small>· lien webcal</small></a>
+<a class="btn" id="google" target="_blank" rel="noopener">Google Agenda <small>· depuis un ordinateur</small></a>
+<a class="btn" id="outlook" target="_blank" rel="noopener">Outlook.com (compte perso)</a>
+<a class="btn" id="o365" target="_blank" rel="noopener">Outlook Microsoft 365 (compte pro)</a>
+<p class="note">Lien à copier pour un ajout manuel (« ajouter un agenda à partir d’une URL ») :</p>
+<input class="copy" id="raw" readonly>
+
+<h2>Contenu du calendrier</h2>
+<ol id="events"><li>Chargement…</li></ol>
+
+<script>
+const https = new URL('test.ics', location.href).href;
+const webcal = https.replace(/^https?:/, 'webcal:');
+const name = encodeURIComponent('Mes dépistages (TEST)');
+document.getElementById('apple').href = webcal;
+document.getElementById('google').href = 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(webcal);
+document.getElementById('outlook').href = 'https://outlook.live.com/owa?path=/calendar/action/compose&rru=addsubscription&url=' + encodeURIComponent(https) + '&name=' + name;
+document.getElementById('o365').href = 'https://outlook.office.com/owa?path=/calendar/action/compose&rru=addsubscription&url=' + encodeURIComponent(https) + '&name=' + name;
+document.getElementById('raw').value = https;
+(async () => {
+  const list = document.getElementById('events');
+  try {
+    const txt = (await (await fetch('test.ics', { cache: 'no-store' })).text()).replace(/\r\n[ \t]/g, '');
+    const items = txt.split('BEGIN:VEVENT').slice(1).map(b => ({
+      d: (b.match(/DTSTART[^:]*:(\d{8})(T(\d{4}))?/) || []),
+      s: ((b.match(/\nSUMMARY:(.*)/) || [])[1] || '').replace(/\\,/g, ',').replace(/\\;/g, ';'),
+    })).filter(e => e.d[1]).sort((a, b) => (a.d[1] + (a.d[3] || '')).localeCompare(b.d[1] + (b.d[3] || '')));
+    list.innerHTML = '';
+    for (const e of items.slice(0, 25)) {
+      const d = e.d[1];
+      const li = document.createElement('li');
+      const when = `${d.slice(6, 8)}/${d.slice(4, 6)}/${d.slice(0, 4)}` + (e.d[3] ? ` ${e.d[3].slice(0, 2)}h${e.d[3].slice(2)}` : '');
+      li.innerHTML = `<span>${when}</span> · `;
+      li.appendChild(document.createTextNode(e.s));
+      list.appendChild(li);
+    }
+    if (items.length > 25) {
+      const li = document.createElement('li');
+      li.textContent = `… et ${items.length - 25} autres rappels jusqu’à 100 ans.`;
+      list.appendChild(li);
+    }
+  } catch (err) {
+    list.innerHTML = '<li>Aperçu indisponible.</li>';
+  }
+})();
+</script>
+</body>
+</html>
